@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #1f2937;
+}
+
+.navbar {
+  height: 70px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 40px;
+}
+
+.main-content h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.main-content p {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+.candidate-table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.candidate-table th {
+  padding: 18px 24px;
+  text-align: left;
+  background: #f8fafc;
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.candidate-table td {
+  padding: 20px 24px;
+  text-align: left;
+  font-size: 15px;
+  color: #4b5563;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: middle;
+}
+
+.candidate-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.candidate-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.candidate-table th:nth-child(1) {
+  width: 15%;
+}
+
+.candidate-table th:nth-child(2) {
+  width: 22%;
+}
+
+.candidate-table th:nth-child(3) {
+  width: 20%;
+}
+
+.candidate-table th:nth-child(4) {
+  width: 15%;
+}
+
+.candidate-table th:nth-child(5) {
+  width: 28%;
+}
+
+
+.page-description {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.job-form {
+  max-width: 800px;
+  padding: 28px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.job-form label {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.job-form input,
+.job-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.job-form textarea {
+  resize: vertical;
+}
+
+.job-form input:focus,
+.job-form textarea:focus {
+  outline: none;
+  border-color: #6b7280;
+}
+
+.job-form button {
+  margin-top: 12px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #1f2937;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
